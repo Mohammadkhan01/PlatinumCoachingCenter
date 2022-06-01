@@ -1,0 +1,348 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<script runat="server">
+
+   
+</script>
+
+<html lang="en">
+
+<head runat="server">
+   
+   
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ryde Mosque</title>
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="style.css" />	
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel=" stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/waypoints.css">
+    <script src="js/jquery.waypoints.min.js" type="text/javascript" ></script>
+    <script src="js/waypoints.js" type="text/javascript"></script>
+    
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header>
+      
+
+        <div id="header-inner">
+             <div id="branding">
+             <h1> Ryde Masallah</h1>
+          </div>
+            <nav>
+
+                <a href="#" id="menu-icon"></a>
+                <ul>
+                    <li><a href="index.aspx" class="current " ><i class="fa fa-home"></i> Home </a></li>
+                    <li><a href="AboutUs.aspx"><i class="fa fa-info"></i> About Us</a></li>
+                    <li><a href="Quran Class"><i class="fa fa-inbox "></i> Quran Class</a></li>
+                    <li><a href="Activities"><i class="fa fa-mail-forward"></i>  Information about ISLAM</a></li>
+                    <li><a href="ContactUs.aspx"><i class="fa fa-envelope-o "></i> Donation</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+<!--- Start Slider -->
+		<script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
+
+    <div class="slide-wrap">
+        <section class="slider">
+            <ul class="slider1">
+                <li><img src="../img/mosque1.jpg"  /></li>
+                <li><img src="../img/mosque2.jpg"  /></li>
+                <li><img src="../img/peace1.jpg " /></li>
+                <li><img src="../img/pillar of islam.jpg" /></li>
+                
+            </ul>
+        </section>
+    </div>
+
+		<script type="text/javascript">
+		    $('.slider1').bxSlider({
+		        mode: 'fade',
+		        captions: false,
+		        auto: true,
+		        pager: false,
+
+		    });
+		    $('.slider2').bxSlider({
+		        pager: false,
+		        captions: true,
+		        maxSlides: 3,
+		        minSlides: 1,
+		        slideWidth: 130,
+		        slideMargin: 80
+		    });
+		    $('.slider3').bxSlider({
+		        mode: 'fade',
+		        captions: false,
+		        auto: true,
+		        pager: false,
+		        controls: false,
+		    });
+		</script>
+<!--- End Slider -->
+<div class="clearfix">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+    </asp:ContentPlaceHolder>
+        </div>
+    <div id="inner-wrapper">
+    <!--Start animation-->
+        <section class="staggered-animation-container">
+            <section class="os-animation" data-os-animation="zoomInLeft" data-os-animation-delay=".3">
+                <section class="one-third">
+                    <div class="circle">
+                        <td>
+                            <i class="fa fa-users"></i>
+                        </td>
+                    </div>
+                    <h3>Time Table of daily Prayers</h3>
+                    <p>
+                        </section>
+            </section>
+            <section class="one-third">
+                <section class="os-animation" data-os-animation="zoomInLeft" data-os-animation-delay=".3">
+
+                    <div class="circle">
+                        <td>
+                            <i class="fa fa-map-marker">
+                            </i>
+                        </td>
+                    </div>
+                    <h3>Events </h3>
+                    <p>
+                      Jumma Prayers in this area
+                    </p>
+                </section>
+</section>
+            <section class="one-third">
+                <section class="os-animation" data-os-animation="zoomInLeft" data-os-animation-delay=".3">
+
+                    <div class="circle">
+                        <td>
+                            <i class="fa fa-check-square-o"></i>
+                        </td>
+                    </div>
+                    <h3>Weekly Activities </h3>
+                    <p>
+                        Weekly every saturday there would be jawla...
+                    </p>
+                </section>
+                </section>
+            <div class="clearfix"></div>
+            <section class="os-animation" data-os-animation="fadeInRightzoomInLeft" data-os-animation-delay=".3">
+
+                <article>
+                    <img src="../img/peace1.jpg" class="circle-image" />
+                </article>
+                    
+                    <h4 >Five pillar of Islam ?</h4>
+                <aside>
+                    
+                    <br>
+
+                    <ul class="gym">
+                        <li><h5>Kalima</h5></li>
+                        <li><h5>Namaj </h5></li>
+                        <li><h5>Saom</h5></li>
+                        <li><h5>Hazz</h5></li>
+                        <li><h5>Zakat</h5></li>
+                    </ul>
+                </aside>
+                </section>
+            <div class="clearfix"></div>
+            
+                
+                    <div class="clearfix"></div>
+            <section class="os-animation" data-os-animation="zoomInLeft" data-os-animation-delay=".3">
+
+                <section class="one-third">
+                    <h3>Future Generation of Muslim</h3>
+                    <img src="../img/mosque1.jpg" />
+                    <p>
+                         Every child in Muslim family is the next leader of Muslim Ummah.
+</p>
+
+                </section>
+                </section>
+            <section class="os-animation" data-os-animation="zoomInLeft" data-os-animation-delay=".3">
+
+                <section class="one-third">
+                    <h3>Ryde Mosque Extention</h3>
+                    <img src="../img/mosque2.jpg" />
+                    <p> 
+
+
+We are going to make extention of the mosque... Please help us to build the house of Allah.
+                </section>
+                </section>
+            <section class="os-animation" data-os-animation="zoomInLeft" data-os-animation-delay=".3">
+
+                <section class="one-third">
+                    <h3>Next Evenets</h3>
+                    <img src="../img/logo mosque1.jpg" />
+                    <p>Tablig Jamat : Calling people towards Allah is every peoples duty.</p>
+
+                </section>
+                </section>
+
+            </section>
+
+    </div><!----end inner wrapper-->
+    <div class="clearfix"></div>
+    <!--Footer-->
+    <footer >
+        <div id="footer-inner">
+            <section class="one-third" id="footer-third">
+                <h3>Contact</h3>
+                <p class="footercontact">Ryde Mosque<br />
+                    <b class="phone">   </b><br />
+                3/Blexland Road<br />
+                </p>
+                
+                
+            </section>
+
+            <section class="one-third" id="footer-third-second">
+                <h3>Social</h3>
+                <br />
+                     <div style="font-family:Arial">
+  
+    <fieldset style="width:250px" >
+        
+       <table >
+            <tr>
+                <td>
+                  <b>Name :</b>
+                </td>
+                 <td>
+                     <asp:TextBox ID="TxtName" Width ="200px" runat="server"></asp:TextBox>
+                </td>
+                 <td>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Name is Required" ControlToValidate ="txtName"
+                         Text="*"
+                         ForeColor="red"></asp:RequiredFieldValidator>
+                </td>
+                
+            </tr>
+
+             <tr>
+                <td>
+                  <b>Email :</b>
+                </td>
+                 <td>
+                     <asp:TextBox ID="TxtEmail" Width ="200px" runat="server"></asp:TextBox>
+                </td>
+                 <td>
+
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                         display="Dynamic" ErrorMessage="RequiredFieldValidator" ControlToValidate ="txtEmail"></asp:RequiredFieldValidator>
+                    
+                </td>
+                
+            </tr>
+
+
+             <tr>
+                <td>
+                  <b>Subject :</b>
+                </td>
+                 <td>
+                     <asp:TextBox ID="TxtSubject" Width ="200px" runat="server"></asp:TextBox>
+                </td>
+                 <td>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Subject is Required" ControlToValidate ="txtSubject"
+                         Text="*"
+                         ForeColor="red"></asp:RequiredFieldValidator>
+                </td>
+                
+            </tr>
+
+             <tr>
+                <td>
+                  <b>Comments :</b>
+                </td>
+                 <td>
+                     <asp:TextBox ID="TxtComment" Width ="207px" runat="server" TextMode="MultiLine" Height="92px"></asp:TextBox>
+                </td>
+                 <td>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
+                         ErrorMessage="Comments are Required" ControlToValidate ="txtComment"
+                         Text="*"
+                         ForeColor="red"></asp:RequiredFieldValidator>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td colspan ="3">
+                    <asp:ValidationSummary ID ="ValidationSummary1" HeaderText="Please fix these following error" ForeColor ="Red" runat="server" />
+                   
+                     </td>
+            </tr>
+            <tr>
+                <td colspan ="3">
+                    <asp:Label ID="Label1" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan ="3">
+                    <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" style="color: #FFFFFF; font-weight: 700; background-color: #000066" Width="301px" />
+                </td>
+            </tr>
+        </table>
+    
+    </fieldset>
+        
+        </div> 
+            </section>
+            
+            <section class="one-third" id="footer-third-last">
+                <h3>Pages</h3>
+               <br />
+                   <h5>
+
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.5269196064646!2d151.07818811521182!3d-33.92757338064008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bbc5369a50cd%3A0x3c1fcc4c53b353a3!2s908+Canterbury+Rd%2C+Roselands+NSW+2196!5e0!3m2!1sen!2sau!4v1501765588849" frameborder="0" style="border-style: none; border-color: inherit; border-width: 0; height: 279px; width: 400px;" allowfullscreen></iframe>
+<!--- End Slider
+                       <a href="index.html">home</a>-
+                        
+                    <a href="AboutUs.aspx">About</a>-
+                    <a href="subject.aspx">Facility</a>-
+                    <a href="Course.aspx">Pricing</a>-
+                    <a href="ContactUs.aspx">Contact</a>
+                       
+                     -->
+                       MAP
+                   </h5>
+
+            </section>
+            
+        </div>
+    </footer>
+    <footer class="second">
+        <p>@copy 2017/Sydney Platinum Coaching Centre</p>
+         </footer>
+   
+
+
+     <a class="fix-me button" href="ContactUs.aspx"">Contact 
+
+     </a>
+    </form>
+</body>
+</html>
